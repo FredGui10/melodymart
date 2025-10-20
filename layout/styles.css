@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/music-notes-bg.png') repeat;
+  background-color: #f5f0e6; /* beige base */
+  color: #333;
+}
+
+header {
+  background-color: #d4b483;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+main {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.main-product img {
+  width: 60%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.main-product {
+  margin-bottom: 50px;
+}
+
+.price {
+  font-size: 18px;
+  color: #b45f06;
+}
+
+.details-btn {
+  background-color: #b45f06;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.other-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d4b483;
+  color: #fff;
+  margin-top: 50px;
+}
