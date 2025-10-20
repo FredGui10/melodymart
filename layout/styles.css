@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif, 'Brush Script MT';
-  background: url('images/music-notes-bg.jpeg') repeat;
+  background: url('../images/music-notes-bg.jpg') no-repeat;
   background-color: #f5f0e6; /* beige base */
   color: #333;
+  background-position: center;
 }
 
 header {
