@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif, 'Brush Script MT';
   background: url('images/music-notes-bg.jpeg') repeat;
   background-color: #f5f0e6; /* beige base */
   color: #333;
@@ -19,9 +19,9 @@ header {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  font-style: Brush Script MT;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: 'Brush Script MT';
 }
 
 .nav-links {
