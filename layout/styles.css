@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background: url('') repeat;
   background: linear-gradient(135deg, #f5f0e6, #e3d5ca);
   color: #333;
 }
