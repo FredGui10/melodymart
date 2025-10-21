@@ -1,98 +1,146 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif, 'Brush Script MT';
-  background: url('../images/music-notes-bg.jpg') no-repeat;
-  background-color: #f5f0e6; /* beige base */
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f0e6, #e3d5ca);
   color: #333;
-  background-position: center;
 }
 
 header {
   background-color: #d4b483;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: white;
+  padding: 30px 20px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Brush Script MT', cursive;
+  color: #2e2e2e;
+  margin-bottom: 10px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-
-.logo {
-  font-size: 34px;
-  font-weight: normal;
-  font-family: 'Brush Script MT';
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 25px;
+  padding: 0;
+  margin: 10px 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
 main {
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.main-product img {
-  width: 60%;
-  max-width: 500px;
-  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-product {
+  text-align: center;
+  background: white;
+  padding: 40px;
   margin-bottom: 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
 }
 
-.price {
-  font-size: 18px;
-  color: #b45f06;
-}
-
-.details-btn {
-  background-color: #b45f06;
-  color: white;
-  padding: 10px 20px;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
+.main-product img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .other-products {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  width: 100%;
 }
 
 .product {
-  background: white;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 16px;
   padding: 20px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
 }
 
 .product img {
   width: 100%;
   height: 200px;
-  border-radius: 8px;
   object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #b45f06;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #b45f06;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #8a4600;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #d4b483;
-  color: #fff;
-  margin-top: 50px;
+  padding: 25px 0;
+  background-color: #2e2e2e;
+  color: white;
+  margin-top: 60px;
 }
